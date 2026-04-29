@@ -2,3 +2,15 @@ h1 {
     background-color:#51A644;
     color:#171474;
 }
+body {
+background-image: url('images/building.jpg');
+
+}
+@media only screen and (max-width: 932px) {
+  p {
+    font-size: 26px;
+  }
+    body {
+    background-color: red;
+  }
+}
