@@ -6,6 +6,7 @@ body {
 background-image: url('images/building.jpg');
 
 }
+
 @media only screen and (max-width: 932px) {
   p {
     font-size: 26px;
