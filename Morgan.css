@@ -31,7 +31,7 @@ background-color: #04AA6D;
 color: white;
 }
 
-  background-image: url('images/building.jpg');
+background-image: url('images/building.jpg');
 
 @media only screen and (max-width: 932px) {
 p {
