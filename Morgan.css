@@ -1,23 +1,31 @@
-h1 {
-  background-color: #05d84b;
-  color: #0d05ff;
+/* Reset margins to prevent weird gaps */
+* {
+  box-sizing: border-box;
 }
 
-/* 1. FIXED: Set the background image on the body element */
 body {
   background-image: url('images/building.jpg');
   background-size: cover;
-  background-position: center;
-  margin: 0; /* Prevents unwanted white borders */
+  background-position: center top;
+  background-attachment: fixed; /* Keeps image still while scrolling */
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
 }
 
-/* 2. FIXED: Separated body from .topnav */
+h1 {
+  background-color: #05d84b;
+  color: #0d05ff;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
 .topnav {
- background-color:#ffffff94 ;
-overflow: hidden;
+  background-color: #ffffff94;
+  overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #0065fc;
@@ -26,27 +34,34 @@ overflow: hidden;
   text-decoration: none;
   font-size: 20px;
 }
+.active {
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #05d84b;
+  background-color: #222673;
+}
+.topnav a:hover, 
+.topnav a.hidden {
+  background-color: #ffffff94;
   color: rgb(25, 0, 255);
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #05d84b;
-  color: rgb(25, 0, 255);
+/* New layout wrapper for your text content */
+.intro-text {
+  font-size: 20px; 
+  color: ; 
+  /* FIXED: Changed to semi-transparent so image peeks through */
+  background-color: rgba(26, 32, 44, 0.85); 
+  line-height: 1.6; 
+  padding: 30px;
+  max-width: 600px;
+  margin: 50px auto; /* Centers the box on the page */
+  border-radius: 8px;
+  text-align: center;
 }
 
-@media only screen and (max-width: px) {
-  p {
+/* FIXED: Added missing 768px value */
+@media only screen and (max-width: 768px) {
+  .intro-text {
     font-size: 26px;
-  }
-  body {
-    /* Keeps your image on mobile,*/
-    background-blend-mode: multiply; 
+    margin: 20px;
   }
 }
-
-
