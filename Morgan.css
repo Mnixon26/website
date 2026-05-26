@@ -35,7 +35,6 @@ h1 {
   font-size: 20px;
 }
 .active {
-
   background-color: #222673;
 }
 .topnav a:hover, 
@@ -47,7 +46,7 @@ h1 {
 /* New layout wrapper for your text content */
 .intro-text {
   font-size: 20px; 
-  color: ; 
+  color: #ffffff; /* FIXED: Added white color value to pass validation */
   /* FIXED: Changed to semi-transparent so image peeks through */
   background-color: rgba(26, 32, 44, 0.85); 
   line-height: 1.6; 
